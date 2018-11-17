@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Redoing my kitchen" company="" webLink="http://" view-date="2018-10-22" view-index="0" gantt-divider-location="612" resource-divider-location="300" version="2.8.9" locale="en_GB">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Name" width="406" order="0"/>
+        <field id="tpd4" name="Begin date" width="104" order="1"/>
+        <field id="tpd5" name="End date" width="96" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Preparing for redoing kitchen" meeting="false" start="2018-10-18" duration="11" complete="0" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <task id="1" name="Hiring Workers" color="#8cb6ce" meeting="false" start="2018-10-18" duration="6" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                <task id="97" name="Browsing for company" color="#8cb6ce" meeting="false" start="2018-10-18" duration="2" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="98" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="98" name="Compare Companies" color="#8cb6ce" meeting="false" start="2018-10-22" duration="2" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="99" name="Contact/Arrange when work is going to Start" color="#8cb6ce" meeting="false" start="2018-10-24" duration="2" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="9" name="Buy Supplies" color="#8cb6ce" meeting="false" start="2018-10-22" duration="7" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+                <task id="11" name="Browse for cupboards, lights, tiles" color="#8cb6ce" meeting="false" start="2018-10-22" duration="4" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="13" name="Compare prices of different suppliers" color="#8cb6ce" meeting="false" start="2018-10-26" duration="2" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="14" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="14" name="Buy/Arrange delivery" color="#8cb6ce" meeting="false" start="2018-10-30" duration="1" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="17" name="Remove old stuff" meeting="false" start="2018-10-31" duration="2" complete="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+                <task id="18" name="Move kitchen items/appliances to storage" color="#8cb6ce" meeting="false" start="2018-10-31" duration="1" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="21" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="21" name="Dismantle cupboards" color="#8cb6ce" meeting="false" start="2018-11-01" duration="1" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="31" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+        </task>
+        <task id="28" name="Carrying out kitchen work" color="#8cb6ce" meeting="false" start="2018-11-02" duration="19" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+            <depend id="73" type="2" difference="0" hardness="Strong"/>
+            <task id="30" name="Cupboard Installation Pt 1:" meeting="false" start="2018-11-02" duration="6" complete="0" expand="true">
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+                <depend id="49" type="2" difference="0" hardness="Strong"/>
+                <task id="31" name="Install the cupboards" color="#8cb6ce" meeting="false" start="2018-11-02" duration="4" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true">
+                    <depend id="33" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="33" name="Install top on cupboards" color="#8cb6ce" meeting="false" start="2018-11-08" duration="2" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="38" name="Plumbing" meeting="false" start="2018-11-12" duration="4" complete="0" expand="true">
+                <depend id="62" type="2" difference="0" hardness="Strong"/>
+                <task id="40" name="Removing/replacing water pipes" color="#8cb6ce" meeting="false" start="2018-11-12" duration="2" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="41" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="41" name="Install the sink into cupboard" color="#8cb6ce" meeting="false" start="2018-11-14" duration="2" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true">
+                    <depend id="49" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="46" name="Put up tiles near the cooker/oven" color="#8cb6ce" meeting="false" start="2018-11-12" duration="2" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="49" name="Electrician" meeting="false" start="2018-11-16" duration="2" complete="0" expand="true">
+                <depend id="62" type="2" difference="0" hardness="Strong"/>
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+                <task id="51" name="Install lights/ sockets/ switches" color="#8cb6ce" meeting="false" start="2018-11-16" duration="1" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true">
+                    <depend id="54" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="52" name="Install cooking fan vent" color="#8cb6ce" meeting="false" start="2018-11-16" duration="1" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true"/>
+                <task id="54" name="Install the washing machine" color="#8cb6ce" meeting="false" start="2018-11-19" duration="1" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true">
+                    <depend id="62" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="62" name="Painters" meeting="false" start="2018-11-20" duration="4" complete="0" expand="true">
+                <depend id="68" type="2" difference="0" hardness="Strong"/>
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+                <task id="63" name="Paint Walls/Ceiling" color="#8cb6ce" meeting="false" start="2018-11-20" duration="1" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="65" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="65" name="Leave paint to dry" color="#8cb6ce" meeting="false" start="2018-11-21" duration="1" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true">
+                    <depend id="66" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="66" name="Apply 2nd coat of paint" color="#8cb6ce" meeting="false" start="2018-11-22" duration="1" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true">
+                    <depend id="67" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="67" name="Leave paint to dry" color="#8cb6ce" meeting="false" start="2018-11-23" duration="1" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="68" name="Carpenters Part 2" color="#8cb6ce" meeting="false" start="2018-11-26" duration="3" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+                <task id="70" name="Remove the old wooden flooring" color="#8cb6ce" meeting="false" start="2018-11-26" duration="2" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                    <depend id="72" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="72" name="Install new stone flooring" color="#8cb6ce" meeting="false" start="2018-11-28" duration="1" complete="0" thirdDate="2018-10-30" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="73" name="Checks and Moving in" color="#8cb6ce" meeting="false" start="2018-11-29" duration="2" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+            <task id="78" name="Check to see if everything is working" color="#8cb6ce" meeting="false" start="2018-11-29" duration="1" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true">
+                <depend id="84" type="2" difference="0" hardness="Strong"/>
+                <depend id="94" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="84" name="Payment to all hired workers" color="#8cb6ce" meeting="false" start="2018-11-30" duration="1" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true"/>
+            <task id="94" name="Move kitchen items/appliances to kitchen" color="#8cb6ce" meeting="false" start="2018-11-30" duration="1" complete="0" thirdDate="2018-10-18" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
