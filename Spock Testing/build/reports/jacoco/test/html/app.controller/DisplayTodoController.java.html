@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DisplayTodoController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">sprint3.miniproject</a> &gt; <a href="index.source.html" class="el_package">app.controller</a> &gt; <span class="el_source">DisplayTodoController.java</span></div><h1>DisplayTodoController.java</h1><pre class="source lang-java linenums">package app.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import app.OrganizerApp;
+import app.domain.Todo;
+
+@Controller
+@RequestMapping(&quot;/&quot;)
+<span class="fc" id="L15">public class DisplayTodoController {</span>
+
+	@RequestMapping(&quot;/&quot;)
+	public String start() {
+<span class="fc" id="L19">		return &quot;redirect:/list&quot;;</span>
+	}
+
+	@RequestMapping(&quot;/list&quot;)
+	public String listTodos(Model model) {
+<span class="fc" id="L24">		List&lt;Todo&gt; todos = OrganizerApp.organizer.getTodos();</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">		if (todos.isEmpty()) {</span>
+<span class="fc" id="L26">			return &quot;NoTodo&quot;;</span>
+		} else {
+<span class="fc" id="L28">			model.addAttribute(&quot;todos&quot;, OrganizerApp.organizer.getTodos());</span>
+		}
+<span class="fc" id="L30">		return &quot;ListTodos&quot;;</span>
+	}
+
+	@RequestMapping(value = &quot;/next&quot;, method = RequestMethod.GET)
+	public String next(Model model) {
+<span class="fc" id="L35">		Todo t = null;</span>
+		try {
+<span class="fc" id="L37">			t = OrganizerApp.organizer.getHighestPrioTodo();</span>
+<span class="fc" id="L38">		} catch (Exception e) {</span>
+<span class="fc" id="L39">			return &quot;NoTodo&quot;;</span>
+<span class="fc" id="L40">		}</span>
+<span class="fc" id="L41">		model.addAttribute(&quot;todo&quot;, t);</span>
+<span class="fc" id="L42">		return &quot;NextTodo&quot;;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
