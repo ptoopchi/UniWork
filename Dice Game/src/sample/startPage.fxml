@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="startPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.startController">
+   <children>
+      <Button id="theAccountCreation" fx:id="createAccount" layoutX="168.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleTheCreate" text="Create Account" />
+      <Button id="theLoggingIn" fx:id="logIn" layoutX="167.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleTheLogIn" prefHeight="27.0" prefWidth="114.0" text="Log In" />
+      <ImageView fx:id="theBackButton" fitHeight="45.0" fitWidth="37.0" layoutX="18.0" layoutY="18.0" onMouseClicked="#handleTheBackButton">
+         <image>
+            <Image url="@../backarrow.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

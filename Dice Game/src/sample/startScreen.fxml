@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="theMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button id="startButton" fx:id="startScreenButton" alignment="CENTER" layoutX="181.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleTheStart" text="Start Game" textAlignment="CENTER" />
+      <Button id="quitButton" fx:id="quitAppButton" alignment="CENTER" layoutX="183.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleTheQuit" text="Quit Game" textAlignment="CENTER" />
+   </children>
+</Pane>
