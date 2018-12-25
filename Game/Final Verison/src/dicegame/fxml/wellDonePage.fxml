@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../../css/basestyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dicegame.wellDoneController">
+   <center>
+      <Pane fx:id="finalPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="theGif" fitHeight="594.0" fitWidth="700.0" layoutX="-1.0" layoutY="3.0">
+               <image>
+                  <Image url="@../../images/win.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="theBackButton" layoutX="223.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleTheBackButton" prefHeight="76.0" prefWidth="278.0" text="Return to main menu" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Console" size="14.0" />
+               </font></Button>
+            <Label fx:id="playerWinHere" alignment="CENTER" contentDisplay="CENTER" layoutX="198.0" layoutY="174.0" prefHeight="81.0" prefWidth="320.0">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radioYes" layoutX="406.0" layoutY="353.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="95.0" text="Yes">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="radioNo" layoutX="406.0" layoutY="383.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="80.0" text="No">
+               <font>
+                  <Font size="18.0" />
+               </font></RadioButton>
+            <Label fx:id="askToSave" layoutX="85.0" layoutY="345.0" prefHeight="41.0" prefWidth="264.0" text="Save to leaderboard:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <ImageView fx:id="pressMute" fitHeight="45.0" fitWidth="54.0" layoutX="13.0" layoutY="541.0" onMouseClicked="#handleTheMute">
+               <image>
+                  <Image url="@../../images/muteButton.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="644.0" layoutX="35.0" layoutY="30.0">
+               <image>
+                  <Image url="@../../images/congrats.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="playerScore" alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="255.0" prefHeight="81.0" prefWidth="494.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

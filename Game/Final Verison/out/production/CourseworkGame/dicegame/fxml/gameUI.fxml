@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="gamUIPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" stylesheets="@../../css/basestyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dicegame.gameUIController">
+   <top>
+      <Pane fx:id="gameUIupperPane" prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="timer" alignment="CENTER" layoutX="196.0" layoutY="7.0" prefHeight="61.0" prefWidth="325.0" text="Elasped Time: 0">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane fx:id="mainGamePane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="dice1" fitHeight="115.0" fitWidth="157.0" layoutX="38.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="dice2" fitHeight="115.0" fitWidth="165.0" layoutX="289.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="theRollButton" layoutX="268.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleTheRoll" prefHeight="61.0" prefWidth="172.0" text="Roll!">
+               <font>
+                  <Font name="Lucida Console" size="39.0" />
+               </font></Button>
+            <Label fx:id="centerText" alignment="CENTER" layoutX="181.0" layoutY="179.0" prefHeight="55.0" prefWidth="346.0" stylesheets="@../../css/basestyle.css">
+               <font>
+                  <Font name="Lucida Console" size="25.0" />
+               </font></Label>
+            <ImageView fx:id="dice3" fitHeight="115.0" fitWidth="165.0" layoutX="547.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="playerOneScore" layoutX="151.0" layoutY="130.0" prefHeight="60.0" prefWidth="141.0" text="0">
+               <font>
+                  <Font size="48.0" />
+               </font></Label>
+            <Label fx:id="playerTwoScore" layoutX="524.0" layoutY="127.0" prefHeight="60.0" prefWidth="131.0" text="0">
+               <font>
+                  <Font size="48.0" />
+               </font></Label>
+            <Label fx:id="player1" alignment="CENTER" layoutX="14.0" layoutY="64.0" prefHeight="49.0" prefWidth="316.0">
+               <font>
+                  <Font size="35.0" />
+               </font></Label>
+            <Label fx:id="player2" alignment="CENTER" layoutX="365.0" layoutY="64.0" prefHeight="49.0" prefWidth="316.0">
+               <font>
+                  <Font size="35.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

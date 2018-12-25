@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="theMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../../css/basestyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dicegame.Controller">
+   <children>
+      <Button id="startButton" fx:id="startScreenButton" alignment="CENTER" layoutX="219.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleTheStart" prefHeight="75.0" prefWidth="262.0" text="Start!" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Console" size="14.0" />
+         </font></Button>
+      <Button id="quitButton" fx:id="quitAppButton" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleTheQuit" prefHeight="75.0" prefWidth="262.0" text=" Quit " textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font></Button>
+      <Label fx:id="theTitleStartPage" alignment="CENTER" layoutX="191.0" layoutY="21.0" prefHeight="52.0" prefWidth="346.0" text="DICE DROP!" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Button id="quitButton" fx:id="howToPlay" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleTheInstructions" prefHeight="75.0" prefWidth="262.0" text="How To Play" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font>
+      </Button>
+      <Button id="quitButton" fx:id="theLeaderboard" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleTheLeaderboard" prefHeight="75.0" prefWidth="262.0" text="Leaderboard" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="240.0" fitWidth="262.0" layoutX="226.0" layoutY="49.0">
+         <image>
+            <Image url="@../../images/mainLogoDice.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pressMute" fitHeight="45.0" fitWidth="54.0" layoutX="14.0" layoutY="537.0" onMouseClicked="#handleTheMute">
+         <image>
+            <Image url="@../../images/muteButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

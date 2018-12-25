@@ -1,0 +1,103 @@
+
+
+
+/*Adding the fonts to the different pages and texts*/
+#theTitleStartPage{
+    -fx-font-family: "Comic Sans MS";
+
+}
+#theTitleLeaderboard{
+    -fx-font-family: "Comic Sans MS";
+}
+#theTextArea{
+    -fx-font-family: "Comic Sans MS";
+}
+#theDetailsTitle{
+    -fx-font-family: "Comic Sans MS";
+}
+#player1Name{
+    -fx-font-family: "Comic Sans MS";
+}
+#player2Name{
+    -fx-font-family: "Comic Sans MS";
+}
+#overallScoreLabel{
+    -fx-font-family: "Comic Sans MS";
+}
+#overallScore{
+    -fx-font-family: "Comic Sans MS";
+}
+#theRollButton{
+    -fx-font-family: "Comic Sans MS";
+}
+#finalPageTitle{
+    -fx-font-family: "Comic Sans MS";
+}
+#playerWinHere{
+    -fx-font-family: "Comic Sans MS";
+}
+#askToSave{
+    -fx-font-family: "Comic Sans MS";
+}
+
+#theBackButton{
+    -fx-font-family: "Comic Sans MS";
+}
+#theHowTitle{
+    -fx-font-family: "Comic Sans MS";
+}
+/*the backgrounds*/
+#centerText{
+    -fx-text-fill: black;
+}
+.root {
+    -fx-background-image: url("background.jpg");
+
+}
+#upperPane{
+    -fx-background-image: url("background2.png");
+}
+#thePane{
+    -fx-background-image: url("background.jpg");
+}
+#mainGamePane{
+    -fx-background-image: url("background.jpg");
+}
+#gameUIupperPane{
+    -fx-background-image: url("background2.png");
+}
+#finalPane{
+    -fx-background-image: url("background.jpg");
+}
+#howPane{
+    -fx-background-image: url("background.jpg");
+}
+.anchor {
+    -fx-background-image: url("background.jpg");
+}
+
+#invalidInput{
+    -fx-text-fill: red;
+}
+.button {
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #eee9e9 0%, #8b8989 100%), /*the under button*/
+        radial-gradient(center 50% 50%, radius 100%, #cdc9c9, #cdc9c9); /*main button*/
+    -fx-padding: 10 15 15 15;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,0 0 5 0;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+.button:hover {-fx-background-color: #d3d3d3;
+}
+.button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+#theSlider {
+    -fx-color:#cdc9c9;
+}
+.slider .track{
+    -fx-control-inner-background: darkgrey;
+}
